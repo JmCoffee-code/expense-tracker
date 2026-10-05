@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Expense Tracker</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Good Morning! John</h1>
+        <div class="header-controls">
+            <div class="dropdown">
+                Daily <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="date-picker">
+                <i class="fas fa-calendar"></i>
+                16 January 2025
+            </div>
+            <div class="export-btn">
+                <i class="fas fa-download"></i>
+                Export
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="dashboard-grid">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Monthly Income</h3>
+                    <button class="card-menu"><i class="fas fa-ellipsis-h"></i></button>
+                </div>
+                <div class="amount income-amount">$2,645.00</div>
+                <div class="change">
+                    <i class="fas fa-arrow-up"></i>
+                    12% vs Last month
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Monthly Expenses</h3>
+                    <button class="card-menu"><i class="fas fa-ellipsis-h"></i></button>
+                </div>
+                <div class="amount income-amount">$1,895.00</div>
+                <div class="change">
+                    <i class="fas fa-arrow-up"></i>
+                    12% vs Last month
+                </div>
+            </div>
+
+
+            <div class="card my-card">
+                <div class="card-header">
+                    <h3 class="card-title">My Card</h3>
+                    <button class="card-menu" style="color: white;"><i class="fas fa-ellipsis-h"></i></button>
+                </div>
+                <div style="font-size: 0.75rem; opacity: 0.8; margin-bottom: 1rem;">Linked to your primary wallet</div>
+
+                <div class="card-chip"></div>
+                <div class="card-number">5436 2735 0037 0015</div>
+                <div class="card-holder">John</div>
+
+                <div class="card-logo">
+                    <div class="card-logo-circle logo-red"></div>
+                    <div class="card-logo-circle logo-orange"></div>
+                </div>
+
+                <div class="spending-section">
+                    <div style="margin-bottom: 0.5rem; font-size: 0.875rem; opacity: 0.9;">Spending Limit</div>
+                    <div class="spending-limit">$4,655.00</div>
+                    <div class="spending-used">used from $12,655.00</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-section">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Overview</h3>
+                    <div style="display: flex; gap: 1rem;">
+                        <div class="dropdown">Yearly <i class="fas fa-chevron-down"></i></div>
+                        <button class="filter-btn">
+                            <i class="fas fa-filter"></i>
+                            Filter
+                        </button>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-bar" style="height: 120px;"></div>
+                    <div class="chart-bar" style="height: 80px;"></div>
+                    <div class="chart-bar active" style="height: 200px;">
+                        <div style="position: absolute; timeline-scope: -30px; left: 50%; transform: translateX(-50%); background: white; padding: 0.25rem 0.5rem; border-radius: 4px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); font-size: 0.75rem; ">
+                            <div style="font-width: 600;">November 2026</div>
+                            <div style="color: #10b981;">Income: $111</div>
+                            <div style="color: #ea580c;">Expenses: $330</div>
+                        </div>
+                        <div class="chart-bar-income" style="height: 120px;"></div>
+                        <div class="chart-bar-expense" style="height: 80px;"></div>
+                    </div>
+                    <div class="char-bar" style="height: 120px;"></div>
+                    <div class="char-bar" style="height: 90px;"></div>
+                    <div class="char-bar" style="height: 110px;"></div>
+                    <div class="char-bar" style="height: 130px;"></div>
+                    <div class="char-bar" style="height: 100px;"></div>
+                    <div class="char-bar" style="height: 80px;"></div>
+                    <div class="char-bar" style="height: 140px;"></div>
+                    <div class="char-bar" style="height: 950px;"></div>
+                </div>
+
+                <div class="chart-labels">
+                    <span>January</span>
+                    <span>February</span>
+                    <span>March</span>
+                    <span>April</span>
+                    <span>May</span>
+                    <span>June</span>
+                    <span>July</span>
+                    <span>August</span>
+                    <span>September</span>
+                    <span>October</span>
+                    <span>November</span>
+                    <span>December</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
