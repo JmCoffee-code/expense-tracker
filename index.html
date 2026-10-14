@@ -98,13 +98,13 @@
                     <div class="chart-bar" style="height: 120px;"></div>
                     <div class="chart-bar" style="height: 80px;"></div>
                     <div class="chart-bar active" style="height: 200px;">
-                        <div style="position: absolute; timeline-scope: -30px; left: 50%; transform: translateX(-50%); background: white; padding: 0.25rem 0.5rem; border-radius: 4px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); font-size: 0.75rem; ">
+                        <div style="position: absolute; top: -30px; left: 50%; transform: translateX(-50%); background: white; padding: 0.25rem 0.5rem; border-radius: 4px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); font-size: 0.75rem; ">
                             <div style="font-width: 600;">November 2026</div>
                             <div style="color: #10b981;">Income: $111</div>
                             <div style="color: #ea580c;">Expenses: $330</div>
                         </div>
-                        <div class="char-bar-income" style="height: 120px;"></div>
-                        <div class="char-bar-expense" style="height: 80px;"></div>
+                        <div class="chart-bar-income" style="height: 120px;"></div>
+                        <div class="chart-bar-expense" style="height: 80px;"></div>
                     </div>
                     <div class="chart-bar" style="height: 120px;"></div>
                     <div class="chart-bar" style="height: 90px;"></div>
@@ -131,6 +131,47 @@
                     <span>December</span>
                 </div>
             </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">All Expenses</h3>
+                    <button class="card-menu"><i class="fas fa-ellipsis-h"></i></button>
+                </div>
+
+                <div style="font-size: 0.75rem; color: #6b7280; margin-bottom: 1rem;">Spending breakdon by category</div>
+
+                <div class="expenses-breakdown">
+                    <div class="total-expenses">$25,645.00</div>
+
+                    <div class="period-tabs">
+                        <span class="period-tab">Daily</span>
+                        <span class="period-tab">Weekly</span>
+                        <span class="period-tab active">Monthly</span>
+                    </div>
+
+                    <div class="period-amounts">
+                        <span>Daily</span>
+                        <span>Weekly</span>
+                        <span>Monthly</span>
+                    </div>
+
+                    <div class="period-values">
+                        <span>$1,134</span>
+                        <span>$7,145</span>
+                        <span>$15,555</span>
+                    </div>
+
+                    <div class="color-bar"></div>
+                    <div class="expense-categories">
+                        <li class="expense-category">
+                            <div class="category-info">
+                                <div class="category-dot dot-food"></div>
+                                <span>Food & Health</span>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -139,5 +180,4 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-50:29
+5751

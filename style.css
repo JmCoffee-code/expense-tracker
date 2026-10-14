@@ -241,3 +241,22 @@ body {
 .chart-bar.active {
     background: linear-gradient(to top, #ea580c, #f5923c);
 }
+
+.chart-bar-income {
+    background: #10b981;
+    margin-bottom: 4px;
+    border-radius: 4px;
+}
+
+.chart-bar-expense {
+    background: #ea580c;
+    border-radius: 4px;
+}
+
+.chart-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    color:#6b7280;
+}
